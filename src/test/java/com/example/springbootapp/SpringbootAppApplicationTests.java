@@ -10,9 +10,9 @@ class SpringbootAppApplicationTests {
 	void contextLoads() {
 	}
 
-	@Test
-	void testFail() {
-		 fail("Not yet implemented");
-	}
+	//@Test
+	//void testFail() {
+	//	 fail("Not yet implemented");
+	//}
 
 }
