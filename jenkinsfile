@@ -1,19 +1,22 @@
 pipeline {
 	agent any
 	stages {
-		stage ('Build'){
+		stage('Build') {
 			steps {
-				echo 'toto'
-				}
+				echo "Etape de build"
+				//sh 'python --version'
 			}
-
-		stage ('Test') {
-			steps{
-
-				echo 'toto'
-				//sh './mvnw-test'
-				// bat '.\mvnw test'
-				}
+		}
+		stage('Tests') {
+			steps { 
+				echo "Etape de test"
+				 sh 'whoami'
+			}
+		}
+		stage ('Deploy') {
+			steps {
+				echo "Etape de déploiement"
 			}
 		}
 	}
+}
